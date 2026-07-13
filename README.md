@@ -1,6 +1,5 @@
 # Insider Threat Digital Forensic Investigation Tool
 An Inider Digital Forensic tool for file and usb activity , Implemented for Windows entreprise environment.
-# TPS Insider Threat Digital Forensic Investigation Tool
 
 A working prototype of the system described in *"Implementation of an
 Automated Insider Threat Digital Forensic Investigation Tool for Toronto

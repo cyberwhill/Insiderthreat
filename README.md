@@ -45,8 +45,8 @@ alerts populate in real time.
 3. Run it continuously (as a scheduled task or service):
    `powershell -File agent.ps1 -ServerUrl "http://<central-station>:5000" -ApiKey "<key>" -WatchPaths "D:\CaseFiles","D:\Evidence"`
 
-Change `AGENT_API_KEY` on the server (`server/app.py`) — and pass the same
-value as `-ApiKey` — before deploying past a demo.
+Change `AGENT_API_KEY` on the server (`server/app.py`)  and pass the same
+value as `-ApiKey`  before deploying past a demo.
 
 ## What it detects
 
@@ -74,7 +74,7 @@ Every event is written to SQLite as a hash-chained ledger
 plus the previous row's hash, the same idea as a blockchain. `GET
 /api/verify` recomputes the whole chain and reports the first row where it
 breaks. This is what the presentation's "Deploying Hash Algorithm" slide
-was solving for — investigators need to be able to show the log wasn't
+was solving for  investigators need to be able to show the log wasn't
 altered after the fact.
 
 ## API reference
@@ -91,7 +91,7 @@ altered after the fact.
 
 ## Limitations (this is a prototype)
 
-- The Flask dev server (`app.run`) isn't for production — front it with
+- The Flask dev server (`app.run`) isn't for production  front it with
   gunicorn/uWSGI + nginx and TLS for a real deployment.
 - Auth is a single shared API key; a real deployment should issue and
   hash per-agent credentials.
